@@ -1,0 +1,158 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid black 1px;
+    align-items: center;
+}
+
+.navbar__s1__title {
+    color: #A435F0;
+}
+
+.navbar__s2 {
+    width: 60%;
+    border: solid black 1px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar__s2 input {
+    font-size: 16px;
+    width: 90%;
+    border: none;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-section {
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+    padding: 10px;
+}
+
+.categories__topic {
+    background-color: #A435F0;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Recommondations__container__card {
+    background-color: white;
+    height: 270px;
+    width: 260px;
+    color: black;
+    margin: 5px;
+}
+
+.Recommondations__container__card img {
+    height: 150px;
+    width: 100%;
+}
+
+.Recommondations__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Recommondations {
+    padding: 10px;
+}
+
+.recommended-topic {
+    padding: 10px;
+}
+
+.topic__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topic__container p {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 5px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+.most-popular {
+    padding: 10px;
+}
+
+.most-popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    margin-top: 80px;
+}
+
+.footer-section__menus {
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 20px;
+    gap: 60px;
+}
+
+.footer-one li {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-two li {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-section__bottom {
+    color: white;
+    padding: 20px;
+}
+
+.footer-section__bottom {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-section__bottom p {
+    font-size: 17px;
+}
