@@ -5,6 +5,9 @@
 
 body {
     font-family: "Gabarito", sans-serif;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .navbar {
@@ -50,10 +53,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.mob-menu-bar{
+    display: none;
+}
 
 .banner-section {
     width: 100%;
     position: relative;
+    z-index: -1;
+}
+.banner-section img {
+    width: 100%;
 }
 
 .categories {
@@ -80,10 +90,10 @@ body {
 
 .Recommondations__container__card {
     background-color: white;
-    height: 270px;
-    width: 260px;
     color: black;
     margin: 5px;
+    flex-grow: 1;
+    flex-basis: 20%;
 }
 
 .Recommondations__container__card img {
@@ -138,7 +148,7 @@ body {
     width: 100%;
     color: white;
     display: flex;
-    padding: 20px;
+    padding: 20px 0px 20px;
     gap: 60px;
 }
 
@@ -171,11 +181,10 @@ body {
 
 .animation-box {
     background-color: white;
-    width: 450px;
-    height: 150px;
+    width: 35%;
     position: absolute;
-    left: 125px;
-    top: 130px;
+    left: 30px;
+    top: 30px;
     padding: 10px;
     animation-name: zoom;
     animation-duration: 2s;
@@ -215,4 +224,52 @@ body {
 
 .purchase-animiation:hover .purchase-box {
     display: block;
+}
+
+
+
+
+/* mobile responsive */
+@media screen and (max-width: 900px) {
+    .mob-menu-bar{
+        display: block;
+    }
+    .navbar__s3 {
+        display: none;
+    }
+    .categories{
+        display: none;
+    }
+    .animation-box h1{
+        font-size: 20px ;
+    }
+    .animation-box p{
+        font-size: 15px ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Recommondations__container__card {
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+    .body{
+        font-size: 10px;
+    }
+
+    .navbar__s2 , .navbar__s3 {
+        display: none;
+    }
+    .categories{
+        display: none;
+    }
+    .animation-box h1{
+        font-size: 15px ;
+    }
+    .animation-box p{
+        font-size: 10px ;
+    }
+    .mob-menu-bar{
+        display: block;
+    }
 }
